@@ -31,7 +31,7 @@
                                         </a>
                                     </div>
                                 </h6>
-                                {{-- <p>Indignation & dislikes men who are so we demoralized so that one.</p> --}}
+
                             </div>
                         </div>
                     </div>

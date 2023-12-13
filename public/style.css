@@ -1,0 +1,59 @@
+#home{
+    background-image: url('../public/assets/images/homee.jpg');
+    height: 25rem;
+
+
+
+
+}
+
+*{
+    font-family: 'Poppins', sans-serif; color:#ffffff; text-align:center;
+}
+
+.card-home{
+
+    margin-top: 15rem;
+    z-index: 9999;
+}
+
+
+.card-hover:hover{
+    box-shadow: 6px 6px 6px rgb(163, 163, 163) !important;
+}
+
+
+.card-hover{
+    background-color:#0A267A !important;
+    height: 20rem;
+}
+.card-hover h3 {
+    color: #FFFFFF;
+    display: block;
+    text-align: center !important;
+    font-weight: bold;
+    font-size: 2rem !important;
+
+}
+
+.card-hover p{
+    text-align: justify !important;
+    color: #FFFFFF;
+}
+
+.title ul li h1,
+.title ul li h3,
+.title ul li h4{
+    color: #FFFFFF !important;
+
+}
+
+.title  ul li h3{
+    margin-top: -3rem;
+    margin-bottom: 2.5rem;
+}
+
+
+
+
+

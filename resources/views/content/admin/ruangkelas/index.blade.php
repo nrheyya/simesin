@@ -4,8 +4,7 @@
         <div class="card-header">
             <div class="card-title">
                 Data Fasilitas Ruang Kelas
-                <a href="{{ url('admin/ruangkelas/create') }}" class="btn btn primary float-right"
-                    style="background-color:#14b6ff;">
+                <a href="{{ url('admin/ruangkelas/create') }}" class="btn btn-light bg-primary float-right">
                     <i class="zmdi zmdi-plus"></i>
                     Tambah Data
                 </a>

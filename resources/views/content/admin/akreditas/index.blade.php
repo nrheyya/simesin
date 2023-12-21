@@ -1,31 +1,22 @@
 @extends('template.admin')
 @section('content')
-    <div class="card-title">
-        <div class="ms-auto">
-            Akreditasi
-            <div class="btn-group">
-                <div class="float-right">
-                    <a href="{{ url('admin/akreditas/create') }}" class="btn btn-light" data-bs-toggle="modal"
-                        data-bs-target="#exampleModal"><i class="zmdi zmdi-plus me-1"></i>
-                        Add New</a>
-                </div>
+    <div class="card">
+        <div class="card-header">
+            <div class="card-title">
+                Akreditasi
+                <a href="{{ url('admin/akreditas/create') }}" class="btn btn-light bg-primary float-right"><i
+                        class="zmdi zmdi-plus me-1"></i>
+                    Tambah Foto
+                </a>
             </div>
         </div>
-    </div>
-    {{-- <a href="{{ url('akreditas/create') }}" class="btn btn primary float-right" style="background-color:#14b6ff;">
-                <i class="zmdi zmdi-plus"></i>
-                Tambah
-            </a> --}}
-    </div>
-    <div class="card">
         <div class="card-header">
             <div class="card-body">
                 <table class="table table-striped" id="table_akreditas">
                     <thead>
                         <th width="50px">NO</th>
-                        <th width="200px">Aksi</th>
-                        <th width="100px">Foto</th>
-                        <th>Nama</th>
+                        <th width="100px">Aksi</th>
+                        <th width="250px">Foto</th>
                     </thead>
                     <tbody>
                         <div class="row row-cols-1 row-cols-sm-2 row-cols-lg-3 product-grid">
@@ -45,10 +36,8 @@
                                                 <x-button.delete id="{{ $akreditas->id }}" />
                                             </div>
                                         </td>
-                                        <td> <img src="{{ url("public/$akreditas->foto") }}" class="card-img-top"
-                                                alt="...">
+                                        <td> <img src="{{ url("public/$akreditas->foto") }}" class="card-img-top">
                                         </td>
-                                        <td>{{ $akreditas->nama }}</td>
                                     </tr>
                                 </div>
                             @endforeach

@@ -4,7 +4,8 @@
         <div class="card-header">
             <div class="card-title">
                 Kurikulum
-                <a href="{{ url('kurikulum/create') }}" class="btn btn primary float-right" style="background-color:#14b6ff;">
+                <a href="{{ url('kurikulum/create') }}" class="btn btn-light  bg-primary float-right"
+                    style="background-color:#14b6ff;">
                     <i class="zmdi zmdi-plus"></i>
                     Tambah
                 </a>

@@ -11,6 +11,7 @@ use App\Http\Controllers\admin\RuangkelasController as AdminRuangkelasController
 use App\Http\Controllers\admin\RuanglabController as AdminRuanglabController;
 use App\Http\Controllers\admin\StafController;
 use App\Http\Controllers\admin\UserController;
+use App\Http\Controllers\AdminController;
 use App\Http\Controllers\client\AkreditasController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\client\PimpinanController;
@@ -38,7 +39,7 @@ use App\Http\Controllers\client\TeknisiController;
 Route::get('login', [AuthController::class, 'showLoginForm'])->name('login');
 Route::post('login', [AuthController::class, 'login']);
 Route::get('register', [HomeController::class, 'register']);
-Route::post('logout', [AuthController::class, 'logout']);
+Route::get('logout', [AuthController::class, 'logout']);
 
 
 Route::get('/', [ClientController::class, 'showHome']);
@@ -53,10 +54,12 @@ Route::get('about/jurnal', [JurnalController::class, 'index']);
 Route::get('kegiatan/{kegiatan}', [KegiatanController::class, 'index']);
 
 //Route::middleware('auth')->group(function () {
-
-Route::get('/beranda', [HomeController::class, 'index']);
 //admin
 Route::prefix('admin')->group(function () {
+
+    Route::get('/beranda', [HomeController::class, 'index']);
+    Route::get('admin', [AdminController::class, 'index']);
+
 
     Route::get('user', [UserController::class, 'getDataUser']);
     Route::get('user/create', [UserController::class, 'create']);

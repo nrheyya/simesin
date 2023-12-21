@@ -48,7 +48,7 @@
                     </div>
                     <div class="row">
                         <div class="col-md-12">
-                            <button class="btn btn-sm btn-primary float-end mt-3"><i class="bx bx-save"> Save</i></button>
+                            <button class="btn btn-sm btn-primary float-end mt-3"><i class="bx bx-save">Simpan</i></button>
                         </div>
                     </div>
                 </form>

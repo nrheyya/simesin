@@ -4,7 +4,7 @@
         <div class="card-header">
             <div class="card-title">
                 Data Fasilitas Ruang Laboratorium & Bengkel
-                <a href="{{ url('admin/ruanglab/create') }}" class="btn btn primary float-right"
+                <a href="{{ url('admin/ruanglab/create') }}" class="btn btn-light bg-primary float-right"
                     style="background-color:#14b6ff;">
                     <i class="zmdi zmdi-plus"></i>
                     Tambah Data

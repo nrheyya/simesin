@@ -4,11 +4,12 @@
         Kembali</a>
     <div class="card">
         <div class="card-header">
-            <div class="card-title">Detail</div>
-            <a href="{{ url('admin/kegiatan', $kegiatan->id) }}/edit" class="btn btn-warning float-right">
-                <i class="zmdi zmdi-edit"></i>
-                Edit
-            </a>
+            <div class="card-title">Detail
+                <a href="{{ url('admin/kegiatan', $kegiatan->id) }}/edit" class="btn btn-warning float-right">
+                    <i class="zmdi zmdi-edit"></i>
+                    Edit
+                </a>
+            </div>
         </div>
         <div class="card-body">
             <div class="row">
@@ -16,10 +17,12 @@
                     <dl>
                         <dt>Nama</dt>
                         <dd>{{ $kegiatan->nama }}</dd>
-                        <dt>kategori</dt>
-                        <dd>{{ $kegiatan->kategori }}</dd>
                         <dt>deskripsi</dt>
                         <dd>{{ $kegiatan->deskripsi }}</dd>
+                    </dl>
+                </div>
+                <div class="col-md-4">
+                    <dl>
                         <dt>Foto</dt>
                         <dd><img src="{{ url("public/$kegiatan->foto") }}" class="card-img-top" alt="..."></dd>
                     </dl>

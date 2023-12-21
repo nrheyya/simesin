@@ -1,12 +1,16 @@
 @extends('template.admin')
 @section('content')
+    <a href="{{ url('admin/user') }}" class="btn btn-warning btn-sm mb-2"><i class="bx bx-chevron-left-circle"></i>
+        Kembali</a>
+
     <div class="card">
         <div class="card-header">
-            <div class="card-title">Detail User</div>
-            <a href="{{ url('admin/user', $user->id) }}/edit" class="btn btn-warning float-right">
-                <i class="zmdi zmdi-edit"></i>
-                Edit
-            </a>
+            <div class="card-title">Detail User
+                <a href="{{ url('admin/user', $user->id) }}/edit" class="btn btn-warning float-right">
+                    <i class="zmdi zmdi-edit"></i>
+                    Edit
+                </a>
+            </div>
         </div>
         <div class="card-body">
             <div class="row">

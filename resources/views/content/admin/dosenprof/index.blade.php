@@ -1,24 +1,26 @@
 @extends('template.admin')
 
 @section('content')
-    <div class="card-header">
-        <div class="card-title">
-            Data Dosen
-            <a href="{{ url('admin/dosenprof/create') }}" class="btn btn-light float-right" style="background-color:#14b6ff;">
-                <i class="zmdi zdmi-plus me-1"></i>
-                Tambah Data
-            </a>
-        </div>
-    </div>
     <div class="card">
+        <div class="card-header">
+            <div class="card-title">
+                Data Dosen
+                <a href="{{ url('admin/dosenprof/create') }}" class="btn btn-light bg-primary float-right"
+                    style="background-color:#14b6ff;">
+                    <i class="zmdi zmdi-plus"></i>
+                    Tambah Data
+                </a>
+            </div>
+        </div>
         <div class="card-body">
             <table class="table table-striped" id="table_dosen">
                 <thead>
                     <th width="50px">NO</th>
-                    <th width="150px">Aksi</th>
+                    <th width="50px">Aksi</th>
                     <th width="100px">Foto</th>
                     <th>Nama</th>
-                    <th>Bidang</th>
+                    <th>NIP/NUP</th>
+                    <th>Posisi</th>
                     <th>Email</th>
                 </thead>
                 <tbody>
@@ -38,6 +40,7 @@
                             </td>
                             <td> <img src="{{ url("public/$dosenprof->foto") }}" class="card-img-top" alt="..."></td>
                             <td>{{ $dosenprof->nama }}</td>
+                            <td>{{ $dosenprof->nip }}</td>
                             <td>{{ $dosenprof->bidang }}</td>
                             <td>{{ $dosenprof->email }}</td>
                         </tr>

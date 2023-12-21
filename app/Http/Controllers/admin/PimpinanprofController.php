@@ -20,6 +20,7 @@ class PimpinanprofController extends Controller
     {
         $pimpinanprof = new Pimpinanprof();
         $pimpinanprof->nama = request('nama');
+        $pimpinanprof->nip = request('nip');
         $pimpinanprof->jabatan = request('jabatan');
         $pimpinanprof->email = request('email');
         $pimpinanprof->handleUploadFoto();
@@ -42,6 +43,7 @@ class PimpinanprofController extends Controller
     function update(Pimpinanprof $pimpinanprof)
     {
         $pimpinanprof->nama = request('nama');
+        $pimpinanprof->nip = request('nip');
         $pimpinanprof->jabatan = request('jabatan');
         $pimpinanprof->email = request('email');
         $pimpinanprof->handleUploadFoto();

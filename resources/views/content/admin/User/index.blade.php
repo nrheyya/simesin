@@ -1,16 +1,17 @@
 @extends('template.admin')
 @section('content')
-    <div class="card-header">
-        <div class="card-title">
-            Data User
-            <a href="{{ url('admin/user/create') }}" class="btn btn-light bg-primary float-right"
-                style="background-color:#14b6ff;">
-                <i class="zmdi zmdi-plus me-1"></i>
-                Tambah User
-            </a>
-        </div>
-    </div>
     <div class="card">
+        <div class="card-header">
+            <div class="card-title">
+                Data User
+                <a href="{{ url('admin/user/create') }}" class="btn btn-light bg-primary float-right"
+                    style="background-color:#14b6ff;">
+                    <i class="zmdi zmdi-accounts-add"></i>
+                    Tambah User
+                </a>
+            </div>
+        </div>
+
         <div class="card-body">
             <table class="table table-striped" id="table_user">
                 <thead>

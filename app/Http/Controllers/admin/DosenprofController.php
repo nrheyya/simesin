@@ -21,6 +21,7 @@ class DosenprofController extends Controller
     {
         $dosenprof = new Dosenprof();
         $dosenprof->nama = request('nama');
+        $dosenprof->nip = request('nip');
         $dosenprof->bidang = request('bidang');
         $dosenprof->email = request('email');
         $dosenprof->handleUploadFoto();
@@ -42,6 +43,7 @@ class DosenprofController extends Controller
     function update(Dosenprof $dosenprof)
     {
         $dosenprof->nama = request('nama');
+        $dosenprof->nip = request('nip');
         $dosenprof->bidang = request('bidang');
         $dosenprof->email = request('email');
         $dosenprof->handleUploadFoto();

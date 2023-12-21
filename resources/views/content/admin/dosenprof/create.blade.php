@@ -21,6 +21,13 @@
                     </div>
                     <div class="col-md-12">
                         <label class="col-lg-3 col-form-label form-control-label">
+                            NIP/NUP</label>
+                        <div class="col-lg-12">
+                            <input class="form-control" type="nip" name="nip">
+                        </div>
+                    </div>
+                    <div class="col-md-12">
+                        <label class="col-lg-3 col-form-label form-control-label">
                             Bidang</label>
                         <div class="col-lg-12">
                             <input class="form-control" type="text" name="bidang">
@@ -43,7 +50,7 @@
                 </div>
                 <div class="row">
                     <div class="col-md-12">
-                        <button class="btn btn-sm btn-primary float-end mt-3"><i class="bx bx-save"> Save</i></button>
+                        <button class="btn btn-sm btn-primary float-end mt-3"><i class="bx bx-save">Simpan</i></button>
                     </div>
                 </div>
             </form>

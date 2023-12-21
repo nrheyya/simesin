@@ -23,7 +23,7 @@
                         <div class="col-lg-12">
                             <input class="form-control" type="file" name="foto" accept=".png, .jpg, .svg">
                         </div>
-                        <button class="btn btn-sm btn-primary float-end mt-3"><i class="bx bx-save"> Save</i></button>
+                        <button class="btn btn-sm btn-primary float-end mt-3"><i class="bx bx-save">Simpan</i></button>
                     </div>
                 </div>
             </form>

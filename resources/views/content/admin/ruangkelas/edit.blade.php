@@ -23,7 +23,7 @@
                             </div>
                             <button class="btn-primary
                                     float-end btn btn-sm mt-3"><i
-                                    class="bx bx-save"></i> Save </button>
+                                    class="bx bx-save"></i> Simpan </button>
                     </form>
                 </div>
             </div>

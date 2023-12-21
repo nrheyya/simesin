@@ -21,6 +21,9 @@
                                     <h4 style="color: black">
                                         {{ $pimpinan->nama }}
                                     </h4>
+                                    <h4 style="color: black; font-weight: bold;">
+                                        {{ $pimpinan->nip }}
+                                    </h4>
                                     <h6 style="color: black">
                                         {{ $pimpinan->jabatan }}
                                     </h6>

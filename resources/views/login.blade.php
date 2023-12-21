@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible"  content="IE=edge" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
     <meta name="description" content="" />
     <meta name="author" content="" />
@@ -12,7 +12,7 @@
     <link href="{{ url('public/assets/css/pace.min.css') }}" rel="stylesheet" />
     <script src="{{ url('public/assets/js/pace.min.js') }}"></script>
     <!--favicon-->
-    <link rel="icon" href="{{ url('public/assets/images/mesin.png') }}" type="image/x-icon">
+    <link rel="icon" href="{{ url('public/assets/images/Politap.png') }}" type="image/x-icon">
     <!-- Bootstrap core CSS-->
     <link href="{{ url('public/assets/css/bootstrap.min.css') }}" rel="stylesheet" />
     <!-- animate CSS-->
@@ -52,7 +52,7 @@
                 <div class="card-body">
                     <div class="border p-4 rounded">
                         <div class="mb-4 text-center">
-                            <img src="{{ url('public') }}/assets/images/mesin.png" width="100" alt="" />
+                            <img src="{{ url('public') }}/assets/images/Politap.png" width="100" alt="" />
                         </div>
                         <div class="card-title text-uppercase text-center py-3">Login</div>
 
@@ -64,8 +64,8 @@
                             <div class="form-group">
                                 <label for="exampleInputEmail" class="sr-only">Email</label>
                                 <div class="position-relative has-icon-right">
-                                    <input type="email" id="exampleInputEmail" class="form-control input-shadow"
-                                        placeholder="Enter Email">
+                                    <input type="email" name="email" id="exampleInputEmail"
+                                        class="form-control input-shadow" placeholder="Enter Email">
                                     <div class="form-control-position">
                                         <i class="icon-envelope-open"></i>
                                     </div>
@@ -74,8 +74,8 @@
                             <div class="form-group">
                                 <label for="exampleInputPassword" class="sr-only">Password</label>
                                 <div class="position-relative has-icon-right">
-                                    <input type="password" id="exampleInputPassword" class="form-control input-shadow"
-                                        placeholder="Enter Password">
+                                    <input type="password" name="password" id="exampleInputPassword"
+                                        class="form-control input-shadow" placeholder="Enter Password">
                                     <div class="form-control-position">
                                         <i class="icon-lock"></i>
                                     </div>
@@ -93,7 +93,7 @@
                                 </div>
                             </div>
                             <button type="button" class="btn btn-light btn-block"><a
-                                    href="{{ url('admin/user') }}">Login</button>
+                                    href="{{ url('admin/beranda') }}">Login</button>
                         </form>
                         <div class="card-footer text-center py-3">
                             <p class="text-warning mb-0">Do not have an account? <a href="{{ url('register') }}">

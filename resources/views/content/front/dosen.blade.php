@@ -19,6 +19,9 @@
                                     <h4 style="color: black">
                                         {{ $dosen->nama }}
                                     </h4>
+                                    <h5 style="color: black; font-weight: bold;">
+                                        {{ $dosen->nip }}
+                                    </h5>
                                     <h6 style="color: black">
                                         {{ $dosen->bidang }}
                                     </h6>

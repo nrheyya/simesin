@@ -1,23 +1,24 @@
 @extends('template.admin')
 @section('content')
-    <div class="card-header">
-        <div class="card-title">
-            Kegiatan
-            <a href="{{ url('admin/kegiatan/create') }}" class="btn btn primary float-right" style="background-color:#14b6ff;">
-                <i class="zmdi zmdi-plus"></i>
-                Tambah Data
-            </a>
-        </div>
-    </div>
     <div class="card">
+        <div class="card-header">
+            <div class="card-title">
+                Kegiatan
+                <a href="{{ url('admin/kegiatan/create') }}" class="btn btn-light bg-primary float-right"
+                    style="background-color:#14b6ff;">
+                    <i class="zmdi zmdi-plus"></i>
+                    Tambah Data
+                </a>
+            </div>
+        </div>
         <div class="card-body">
             <table class="table table-striped" id="table_kegiatan">
                 <thead>
                     <th width="50px">NO</th>
-                    <th width="150px">Aksi</th>
+                    <th width="100px">Aksi</th>
                     <th width="100px">Foto</th>
-                    <th>Nama kegiatan</th>
-                    <th>Deskripsi</th>
+                    <th width="100">Nama kegiatan</th>
+                    <th width="">Deskripsi</th>
                 </thead>
                 <tbody>
                     @foreach ($list_kegiatan as $kegiatan)

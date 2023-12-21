@@ -122,15 +122,15 @@
                                 <figure class="image-box"><img src="{{ url("public/$kegiatan->foto") }}"
                                         style=" object-fit: cover; position: static; width: 100%;
                                         height: 250px;">
-                                    </>
                                 </figure>
                                 <div class="lower-content">
-                                    <h5 style="color: black">
+                                    <h5 class="card-title" style="color: black; font-weight: bold;">
                                         {{ $kegiatan->nama }}
                                     </h5>
                                     <h6>
                                         <div class="link-style2">
-                                            <a href="{{ url("kegiatan/$kegiatan->id") }}" class="read-more">
+                                            <a href="{{ url("kegiatan/$kegiatan->id") }}" class="read-more"
+                                                class="btn btn-primary">
                                                 Read More<i class="zmdi zmdi-long-arrow-right"></i>
                                             </a>
                                         </div>

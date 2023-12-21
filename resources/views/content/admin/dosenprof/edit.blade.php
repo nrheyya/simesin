@@ -4,6 +4,11 @@
     <a href="{{ url('admin/dosenprof') }}" class="btn btn-warning btn-sm mb-2"><i class="bx bx-chevron-left-circle"></i>
         Kembali</a>
     <div class="card">
+        <div class="card-header">
+            <div class="card-title">
+                Edit Data Profil Dosen
+            </div>
+        </div>
         <div class="row g-0">
             <div class="col-md-12">
                 <div class="card-body">
@@ -17,6 +22,13 @@
                                 <div class="col-lg-12">
                                     <input class="form-control" type="text" name="nama"
                                         value="{{ $dosenprof->nama }}">
+                                </div>
+                            </div>
+                            <div class="col-md-12">
+                                <label class="col-lg-3 col-form-label form-control-label">
+                                    NIP/NUP</label>
+                                <div class="col-lg-12">
+                                    <input class="form-control" type="nip" name="nip" value="{{ $dosenprof->nip }}">
                                 </div>
                             </div>
                             <div class="col-md-12">
@@ -47,7 +59,7 @@
                         <div class="row">
                             <div class="col-md-12">
                                 <button class="btn btn-sm btn-primary float-end mt-3"><i class="bx bx-save">
-                                        Save</i>
+                                        Simpan</i>
                                 </button>
                             </div>
                         </div>

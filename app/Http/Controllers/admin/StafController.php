@@ -20,6 +20,7 @@ class StafController extends Controller
     {
         $staf = new Staf();
         $staf->nama = request('nama');
+        $staf->nip = request('nip');
         $staf->posisi = request('posisi');
         $staf->email = request('email');
         $staf->handleUploadFoto();
@@ -43,6 +44,7 @@ class StafController extends Controller
     {
 
         $staf->nama = request('nama');
+        $staf->nip = request('nip');
         $staf->posisi = request('posisi');
         $staf->email = request('email');
         $staf->handleUploadFoto();

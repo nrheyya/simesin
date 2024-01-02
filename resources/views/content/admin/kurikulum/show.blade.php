@@ -14,12 +14,15 @@
             <div class="row">
                 <div class="col-md-6">
                     <dl>
-                        <dt>Nama</dt>
-                        <dd>{{ $kurikulum->nama }}</dd>
+                        <dt>Semester</dt>
+                        <dd>{{ $kurikulum->semester }}</dd>
                     </dl>
                 </div>
-                <div class="col-md-6">
-                    <img src="{{ url('public/kurikulum', $kurikulum->foto) }}" alt="" class="img-fluid">
+                <div class="col-md-4">
+                    <dl>
+                        <dt>Foto</dt>
+                        <dd><img src="{{ url("public/$kurikulum->foto") }}" class="card-img-top" alt="..."></dd>
+                    </dl>
                 </div>
             </div>
         </div>

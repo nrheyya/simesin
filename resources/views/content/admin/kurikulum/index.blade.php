@@ -4,7 +4,7 @@
         <div class="card-header">
             <div class="card-title">
                 Kurikulum
-                <a href="{{ url('kurikulum/create') }}" class="btn btn-light  bg-primary float-right"
+                <a href="{{ url('admin/kurikulum/create') }}" class="btn btn-light  bg-primary float-right"
                     style="background-color:#14b6ff;">
                     <i class="zmdi zmdi-plus"></i>
                     Tambah
@@ -14,10 +14,10 @@
         <div class="card-body">
             <table class="table table-striped" id="table_kurikulum">
                 <thead>
-                    <th width="100px">NO</th>
+                    <th width="50px">NO</th>
                     <th width="100px">Aksi</th>
-                    <th>Nama </th>
-                    <th width="100px">Foto </th>
+                    <th width="50">Semester </th>
+                    <th width="200px">Foto </th>
                 </thead>
                 <tbody>
                     @foreach ($list_kurikulum as $kurikulum)
@@ -25,19 +25,20 @@
                             <td>{{ $loop->iteration }}</td>
                             <td>
                                 <div class="btn-group">
-                                    <a href="{{ url('kurikulum', $kurikulum->id) }}" class="btn btn-info">
+                                    <a href="{{ url('admin/kurikulum', $kurikulum->id) }}" class="btn btn-info">
                                         <i class="zmdi zmdi-info-outline"></i>
                                     </a>
-                                    <a href="{{ url('kurikulum', $kurikulum->id) }}/edit" class="btn btn-warning">
+                                    <a href="{{ url('admin/kurikulum', $kurikulum->id) }}/edit" class="btn btn-warning">
                                         <i class="zmdi zmdi-edit"></i>Edit
                                     </a>
                                     <x-button.delete id="{{ $kurikulum->id }}" />
                                 </div>
                             </td>
                             <td>
-                                {{ $kurikulum->nama }}
+                                {{ $kurikulum->semester }}
                             </td>
-                            <td> <img src="{{ url("public/$kurikulum->foto") }}" class="card-img-top" alt="...">
+                            <td>
+                                <img src="{{ url("public/$kurikulum->foto") }}" class="card-img-top">
                             </td>
                         </tr>
                     @endforeach

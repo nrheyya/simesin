@@ -5,7 +5,7 @@
         <div class="banner-carousel owl-theme owl-carousel">
             <div class="slide-item">
                 <div class="image-layer">
-                    <img src="{{ url('public') }}/assets/images/berita.jpeg" alt="">
+                    <img src="{{ url('public') }}/assets/images/front2.svg" alt="">
                 </div>
                 <div class="auto-container">
                     <div class="content-box">
@@ -93,7 +93,7 @@
                                 class="btn btn-primary mb-5 mt-5">VIDEO PROFILE POLITAP</h6>
                         </div>
                         <div class="video-btn">
-                            <iframe width="1080" height="480" src="https://www.youtube.com/embed/1mVaY1IvEs8"
+                            <iframe width="1080" height="480" src="https://youtu.be/hbI7rwJ2iDQ?si=Nk20XkfO6ObfPEQC"
                                 title="Jingle Vokasi Brawijaya - YUWARAJA XIV" frameborder="0"
                                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                                 allowfullscreen></iframe>

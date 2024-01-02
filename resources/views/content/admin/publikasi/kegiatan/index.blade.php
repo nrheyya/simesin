@@ -17,8 +17,8 @@
                     <th width="50px">NO</th>
                     <th width="100px">Aksi</th>
                     <th width="100px">Foto</th>
-                    <th width="100">Nama kegiatan</th>
-                    <th width="">Deskripsi</th>
+                    <th max-width="50px">Nama kegiatan</th>
+                    <th width="100%">Deskripsi</th>
                 </thead>
                 <tbody>
                     @foreach ($list_kegiatan as $kegiatan)

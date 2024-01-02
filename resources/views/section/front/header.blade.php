@@ -22,7 +22,7 @@
             <div class="top-inner clearfix">
                 <ul class="info pull-left clearfix">
                     <figure class="header-logo"><a href="index.html"><img
-                                src="{{ url('public') }}/assets/images/Headerlogo1.png">
+                                src="{{ url('public') }}/assets/images/logoheaders.png">
                     </figure>
                 </ul>
                 <ul class="info pull-right clearfix">

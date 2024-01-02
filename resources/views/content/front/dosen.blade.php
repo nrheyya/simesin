@@ -14,14 +14,14 @@
                         <div class="team-block-one wow " data-wow-delay="00ms" data-wow-duration="1500ms">
                             <div class="inner-box shadow-lg">
                                 <img src="{{ url("public/$dosen->foto") }}"
-                                    style="object-fit: cover; position: static; widht: 100%; height: 250px;">
+                                    style="object-fit: cover; position: static; widht: 100%; height: 300px;">
                                 <div class="lower-content justify-center text-center">
                                     <h4 style="color: black">
                                         {{ $dosen->nama }}
                                     </h4>
-                                    <h5 style="color: black; font-weight: bold;">
+                                    <h6 style="color: black; font-weight: bold;">
                                         {{ $dosen->nip }}
-                                    </h5>
+                                    </h6>
                                     <h6 style="color: black">
                                         {{ $dosen->bidang }}
                                     </h6>

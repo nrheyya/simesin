@@ -15,15 +15,15 @@
                             <div class="inner-box shadow-lg">
                                 <img src="{{ url("public/$pimpinan->foto") }}"
                                     style="object-fit: cover; position: static;
-                                    widht: 100%; height: 250px;"
+                                    widht: 100%; height: 300px;"
                                     alt="">
                                 <div class="lower-content justify-center text-center">
                                     <h4 style="color: black">
                                         {{ $pimpinan->nama }}
                                     </h4>
-                                    <h4 style="color: black; font-weight: bold;">
+                                    <h6 style="color: black; font-weight: bold;">
                                         {{ $pimpinan->nip }}
-                                    </h4>
+                                    </h6>
                                     <h6 style="color: black">
                                         {{ $pimpinan->jabatan }}
                                     </h6>

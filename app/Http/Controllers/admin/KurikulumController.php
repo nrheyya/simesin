@@ -20,13 +20,12 @@ class KurikulumController extends Controller
 
     function store()
     {
-
         $kurikulum = new Kurikulum();
-        $kurikulum->nama = request('nama');
+        $kurikulum->semester = request('semester');
         $kurikulum->handleUploadFoto();
         $kurikulum->save();
 
-        return redirect('kurikulum');
+        return redirect('admin/kurikulum');
     }
 
     function show(Kurikulum $kurikulum)
@@ -43,21 +42,17 @@ class KurikulumController extends Controller
 
     function update(Kurikulum $kurikulum)
     {
-        $kurikulum->nama = request('nama');
+        $kurikulum->semester = request('semester');
         $kurikulum->handleUploadFoto();
         $kurikulum->save();
-
-        //if (request('foto')) {
-        //    $image = $this->handleUpload('foto');
-        //    $kelas->foto = $image;}
-
-        return redirect('kurikulum');
+        if (request('gambar')) $kurikulum->handleUploadFoto();
+        return redirect('admin/kurikulum');
     }
 
     function delete(Kurikulum $kurikulum)
     {
         $kurikulum->delete();
         $kurikulum->handleDeleteFoto();
-        return redirect('kurikulum');
+        return redirect('admin/kurikulum');
     }
 }

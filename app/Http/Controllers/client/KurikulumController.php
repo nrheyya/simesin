@@ -3,6 +3,7 @@
 namespace App\Http\Controllers\client;
 
 use App\Http\Controllers\Controller;
+use App\Models\Kurikulum;
 use Illuminate\Http\Request;
 
 class KurikulumController extends Controller
@@ -12,7 +13,8 @@ class KurikulumController extends Controller
      */
     public function index()
     {
-        return view('content.front.kurikulum');
+        $data['list_kurikulum'] = Kurikulum::all();
+        return view('content.front.kurikulum', $data);
     }
 
     /**

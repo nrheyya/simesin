@@ -12,13 +12,13 @@
             </div>
         </div>
         <div class="card-body">
-            <table class="table table-striped" id="table_kegiatan">
+            <table class="table table-striped table-responsive" id="table_kegiatan">
                 <thead>
                     <th width="50px">NO</th>
                     <th width="100px">Aksi</th>
                     <th width="100px">Foto</th>
-                    <th max-width="50px">Nama kegiatan</th>
-                    <th width="100%">Deskripsi</th>
+                    <th width="50px">Nama kegiatan</th>
+                    <th width="250px">Deskripsi</th>
                 </thead>
                 <tbody>
                     @foreach ($list_kegiatan as $kegiatan)

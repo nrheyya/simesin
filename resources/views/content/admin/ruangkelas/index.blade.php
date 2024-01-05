@@ -11,12 +11,12 @@
             </div>
         </div>
         <div class="card-body">
-            <table class="table table-striped" id="table_ruangkelas">
+            <table class="table table-striped table-responsive" id="table_ruangkelas">
                 <thead>
                     <th width="50px">NO</th>
-                    <th width="200px">Aksi</th>
-                    <th width="100px">Foto</th>
-                    <th>Nama Kelas</th>
+                    <th width="300px">Aksi</th>
+                    <th width="250px">Foto</th>
+                    <th width="300px">Nama Kelas</th>
                 </thead>
                 <tbody>
                     @foreach ($list_ruangkelas as $ruangkelas)

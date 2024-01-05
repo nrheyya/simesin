@@ -20,8 +20,8 @@
                                 <label class="col-lg-3 col-form-label form-control-label">
                                     Deskripsi</label>
                                 <div class="col-lg-12">
-                                    <input class="form-control" type="text" name="deskripsi"
-                                        value="{{ $kegiatan->deskripsi }}">
+                                    <textarea class="form-control" type="text" name="deskripsi" id="" cols="10" rows="8"
+                                        value="{{ $kegiatan->deskripsi }}"></textarea>
                                 </div>
                                 <label class="col-lg-3 col-form-label form-control-label">
                                     Foto</label>

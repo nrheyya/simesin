@@ -23,7 +23,7 @@
                         <label class="col-lg-3 col-form-label form-control-label">
                             Deskripsi</label>
                         <div class="col-lg-12">
-                            <input class="form-control" type="text" name="deskripsi">
+                            <textarea class="form-control" type="text" name="deskripsi" id="" cols="10" rows="8"></textarea>
                         </div>
                     </div>
                     <div class="col-md-12">

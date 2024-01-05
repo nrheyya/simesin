@@ -26,8 +26,8 @@
                     </figure>
                 </ul>
                 <ul class="info pull-right clearfix">
-                    <li><i class="flaticon-email"></i><a href="#">abc@politap.ic.id</a></li>
-                    <li><i class="flaticon-telephone"></i><a href="#">+62895123456</a></li>
+                    <li><i class="flaticon-email"></i><a href="#">mesin@politap.ic.id</a></li>
+                    <li><i class="flaticon-telephone"></i><a href="#">+6285230506616</a></li>
                     <li><i class="flaticon-location"></i><a href="#">JL. Rangga Sentap </a></li>
                 </ul>
             </div>

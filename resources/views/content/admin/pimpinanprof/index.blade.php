@@ -12,7 +12,7 @@
             </div>
         </div>
         <div class="card-body">
-            <table class="table table-striped" id="table_pimpinan">
+            <table class="table table-striped table-responsive" id="table_pimpinan">
                 <thead>
                     <th width="50px">NO</th>
                     <th width="50px">Aksi</th>

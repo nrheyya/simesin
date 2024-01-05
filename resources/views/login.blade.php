@@ -56,15 +56,19 @@
                         </div>
                         <div class="card-title text-uppercase text-center py-3">Login</div>
 
-                        @if (session('error'))
-                            <div class="alert alert-danger">{{ session('error') }}</div>
+                        @if ($errors->any())
+                            <div class="alert alert-danger">
+                                @foreach ($errors->all() as $error)
+                                    {{ $error }}
+                                @endforeach
+                            </div>
                         @endif
                         <form action="{{ url('login') }}" method="post">
                             @csrf
                             <div class="form-group">
                                 <label for="exampleInputEmail" class="sr-only">Email</label>
                                 <div class="position-relative has-icon-right">
-                                    <input type="email" name="email" id="exampleInputEmail"
+                                    <input type="email" name="email" id="floatingInput"
                                         class="form-control input-shadow" placeholder="Enter Email">
                                     <div class="form-control-position">
                                         <i class="icon-envelope-open"></i>
@@ -72,9 +76,9 @@
                                 </div>
                             </div>
                             <div class="form-group">
-                                <label for="exampleInputPassword" class="sr-only">Password</label>
+                                <label for="floatingPassword" class="sr-only">Password</label>
                                 <div class="position-relative has-icon-right">
-                                    <input type="password" name="password" id="exampleInputPassword"
+                                    <input type="password" name="password" id="floatingPassword"
                                         class="form-control input-shadow" placeholder="Enter Password">
                                     <div class="form-control-position">
                                         <i class="icon-lock"></i>
@@ -88,18 +92,14 @@
                                         <label for="user-checkbox">Remember me</label>
                                     </div>
                                 </div>
-                                <div class="form-group col-6 text-right">
-                                    <a href="reset-password.html">Reset Password</a>
-                                </div>
                             </div>
-                            <button type="button" class="btn btn-light btn-block"><a
-                                    href="{{ url('admin/beranda') }}">Login</button>
+                            <button type="submit" class="btn btn-light btn-block">Login</button>
                         </form>
-                        <div class="card-footer text-center py-3">
+                        {{-- <div class="card-footer text-center py-3">
                             <p class="text-warning mb-0">Do not have an account? <a href="{{ url('register') }}">
                                     Registrasion
                                     Here</a></p>
-                        </div>
+                        </div> --}}
                     </div>
                 </div>
             </div>

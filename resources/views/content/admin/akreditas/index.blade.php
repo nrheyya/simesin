@@ -12,11 +12,11 @@
         </div>
         <div class="card-header">
             <div class="card-body">
-                <table class="table table-striped" id="table_akreditas">
+                <table class="table table-striped table-responsive" id="table_akreditas">
                     <thead>
-                        <th width="50px">NO</th>
-                        <th width="100px">Aksi</th>
-                        <th width="250px">Foto</th>
+                        <th>NO</th>
+                        <th>Aksi</th>
+                        <th>Foto</th>
                     </thead>
                     <tbody>
                         <div class="row row-cols-1 row-cols-sm-2 row-cols-lg-3 product-grid">

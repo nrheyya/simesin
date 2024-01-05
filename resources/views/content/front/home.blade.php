@@ -90,10 +90,10 @@
                     <div class="content-box">
                         <div class="other-text">
                             <h6 style="font-family: 'Poppins', sans-serif; color:#ffffff; font-weight: bold;  text-align:center; font-size:1,8rem; "
-                                class="btn btn-primary mb-5 mt-5">VIDEO PROFILE POLITAP</h6>
+                                class="btn btn-primary mb-5 mt-5">VIDEO TESTIMONI ALUMNI</h6>
                         </div>
                         <div class="video-btn">
-                            <iframe width="1080" height="480" src="https://youtu.be/hbI7rwJ2iDQ?si=Nk20XkfO6ObfPEQC"
+                            <iframe width="1080" height="480" src="https://www.youtube.com/embed/hbI7rwJ2iDQ"
                                 title="Jingle Vokasi Brawijaya - YUWARAJA XIV" frameborder="0"
                                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                                 allowfullscreen></iframe>

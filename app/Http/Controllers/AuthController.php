@@ -2,8 +2,9 @@
 
 namespace App\Http\Controllers;
 
+use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
-
+use Illuminate\Http\RedirectResponse;
 
 class AuthController extends Controller
 {
@@ -12,35 +13,27 @@ class AuthController extends Controller
         return view('login');
     }
 
-    function login()
+    public function login(Request $request): RedirectResponse
     {
-        $credential = [
-            'email' => request('email'),
-            'password' => request('password')
-        ];
+        $credentials = $request->validate([
+            'email' => ['required', 'email'],
+            'password' => ['required'],
+        ]);
 
-        if (auth()->attempt($credential)) {
-            return redirect('admin');
+        if (Auth::attempt($credentials)) {
+            $request->session()->regenerate();
+
+            return redirect()->intended('admin/beranda')->with('success', 'Berhasil Login Sebagai Admin');
         }
 
-        return back()->with('error', 'Akun TIdak DI Temukan');
-    }
-
-    function loginproses()
-    {
-
-        if (Auth::attempt(['email' => request('email'), 'password' => request('password')])) {
-            $user = Auth::user();
-            if ($user->level == 1) return redirect('admin')->with('success', 'Berhasil Login Sebagai Admin');
-        } else {
-            return back()->with('warning', 'Login Error!');
-        }
+        return back()->withErrors([
+            'email' => 'Login Gagal.',
+        ])->onlyInput('email');
     }
 
     public function logout()
     {
         auth()->logout();
-
         return redirect('login');
     }
 }
